@@ -1,0 +1,25 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorSnap</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <button id="theme-toggle" aria-label="Toggle Light/Dark Mode"></button>
+    <h1>ColorSnap</h1>
+    <label id="custom-upload-button" for="image-upload">Choose an Image</label>
+    <input type="file" id="image-upload" accept="image/*">
+    <div id="image-container">
+        <canvas id="canvas" style="display: none;"></canvas>
+    </div>
+    <div id="output">
+        <div id="color-box"></div>
+        <span id="hex-code">Select a color to see its hex code</span>
+        <button id="copy-button">Copy Hex Code</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
